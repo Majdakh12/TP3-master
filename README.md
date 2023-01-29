@@ -26,3 +26,24 @@ oui. on voit bien la table
 
 question 22:
 L'annotation @Autowired en Spring est utilisée pour injecter automatiquement une dépendance dans une classe en utilisant le conteneur de beans Spring.
+
+---------------------------------------------------------------------------------------------
+TP4:
+
+6-1 Faut-il une clé API pour appeler MeteoConcept ?
+Non, il suffit de récupérer la météo d'un lieu visé par des coordonnées GPS
+
+6-2 Quelle URL appeler ?
+via l'URL suivante : https://api.meteoconcept.com/v1/forecast/locale/{latitude},{longitude}
+
+6-3  Quelle méthode HTTP utiliser ?
+La méthode HTTP à utiliser est GET.
+
+6-4 Comment passer les paramètres d'appels ?
+Pour passer les paramètres d'appel, il faut les inclure dans l'URL, comme indiqué ci-dessus.
+
+6-6 Où est l'information dont j'ai besoin dans la réponse :
+Pour afficher la température du lieu visé par les coordonnées GPS, on accéde à l'information dans la réponse à l'URL suivante : https://api.meteoconcept.com/v1/forecast/locale/{latitude},{longitude}/temp
+
+6-7 Pour afficher la prévision de météo du lieu visé par les coordonnées GPS
+Pour afficher la prévision de météo du lieu visé par les coordonnées GPS, on accéde à l'information dans la réponse à l'URL suivante : https://api.meteoconcept.com/v1/forecast/locale/{latitude},{longitude}/forecast
