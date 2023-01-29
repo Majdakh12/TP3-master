@@ -1,9 +1,9 @@
 package com.ensim.TP3.controller;
 
-public class AddressGeometry {
+public class Cordinnates {
     private double [] coordinates;
 
-    public AddressGeometry() {
+    public Cordinnates() {
     }
 
     public double[] getCoordinates() {

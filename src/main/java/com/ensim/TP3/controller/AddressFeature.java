@@ -1,14 +1,14 @@
 package com.ensim.TP3.controller;
 
 public class AddressFeature {
-    AddressGeometry geometry;
+    Cordinnates geometry;
     AddressProperties properties;
 
 
     public AddressFeature() {
     }
 
-    public AddressGeometry getGeometry() {
+    public Cordinnates getGeometry() {
         return geometry;
     }
 

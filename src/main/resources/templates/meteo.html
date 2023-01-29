@@ -1,11 +1,35 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-<title>greeting</title>
+<title>Meteo</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style>
+        .col{
+    margin-left: 25%;
+}
+    </style>
 </head>
 <body>
 <div th:replace="./navBar.html"/>
-<p th:text="'Bonjour ' + ${adress} + ' !'" />
+<h1 th:text="${city}" class="text-center"></h1>
+
+<div class="container">
+    <div class="row row-cols-4">
+
+        <div class="col" >
+            <div class="card bg-light text-center" style="width:30rem;">
+                <div class="card-header">
+                    <h4 th:text="${date}"></h4>
+                </div>
+
+                <div class="card-body">
+                    <p class="card-text" th:text="'T° minimale : ' + ${tmin} + '°C'"></p>
+                    <p class="card-text" th:text="'T° maximale : ' + ${tmax} + '°C'"></p>
+                    <p class="card-text" th:text="'Probabilité de pluie : ' + ${probarain} + '%'"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
