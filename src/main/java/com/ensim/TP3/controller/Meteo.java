@@ -1,7 +1,7 @@
 package com.ensim.TP3.controller;
 
 public class Meteo {
-    private int  weather, tmin, tmax, probarain;
+    private int  tmin, tmax, probarain;
 
     public Meteo(){}
 
